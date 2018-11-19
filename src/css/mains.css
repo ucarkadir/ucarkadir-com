@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:100,300,400,700);
+body {
+  font-family: "Roboto Slab", serif;
+  color: #ffffff;
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5); }
+
+#Showcase {
+  height: calc(100vh - 4rem);
+  background-color: #01194f;
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  position: relative; }
+  #Showcase .swiper-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: transparent; }
+    #Showcase .swiper-container .swiper-content {
+      height: 100vh !important;
+      position: relative;
+      overflow: hidden;
+      background-color: #000; }
+      #Showcase .swiper-container .swiper-content .swiper-img {
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.8; }
+    #Showcase .swiper-container img {
+      height: 100vh;
+      width: 100vw; }
+  #Showcase .p-absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999; }
+  #Showcase .container .content {
+    font-size: 1.25rem;
+    font-weight: 300;
+    background-color: rgba(0, 0, 0, 0.2); }
+  #Showcase .container .content-header {
+    letter-spacing: 0.16rem;
+    color: #ffffff; }
+  #Showcase .container .content-links a {
+    color: #039cfd; }
+    #Showcase .container .content-links a:hover {
+      color: #0758b7; }
+
+@media (max-width: 575.98px) {
+  .content-header {
+    color: yellow !important; } }
+
+.header {
+  min-height: 4rem;
+  background-color: #039cfd;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1); }
+  .header a {
+    color: #ffffff;
+    letter-spacing: 0.0625em; }
+
+#Contact {
+  height: calc(100vh);
+  background-color: #0758b7;
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5); }
+  #Contact .container .content {
+    font-size: 1.25rem;
+    font-weight: 300;
+    background-color: rgba(14, 23, 28, 0.2); }
+  #Contact .container .social-bg a {
+    color: #ffffff; }
+  #Contact .container .social-bg a:hover {
+    color: #039cfd;
+    text-decoration: none; }
+  #Contact .container .social-bg .social-bx {
+    padding: 1rem !important; }
+    #Contact .container .social-bg .social-bx i {
+      font-size: 2.5rem; }
+
+#Category {
+  color: #0e171c; }
+  #Category .category {
+    background-color: #0758b7; }
+    #Category .category a {
+      color: #ffffff; }
+    #Category .category a:hover {
+      color: #039cfd;
+      text-decoration: none; }
+  #Category .content .content-header {
+    border: 1px solid black; }
+  #Category .content .img-container {
+    height: 30vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden; }
+  #Category .content .img-container img {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  #Category .content a {
+    color: #0e171c;
+    text-decoration: none;
+    height: 177px;
+    overflow: hidden; }
+  #Category .content a:hover {
+    color: #039cfd; }

@@ -1,0 +1,44 @@
+@mixin text-shadow($color){
+        /* WebKit (Safari/Chrome) Only */
+        -webkit-text-stroke: 1px $color;
+        
+        /* If we weren't using text-shadow, we'd set a fallback color
+           and use this to set color instead
+          -webkit-text-fill-color: white; */
+        
+        color: $color-white; 
+        
+        text-shadow:
+          3px 3px 0 $color,
+          /* Simulated effect for Firefox and Opera
+             and nice enhancement for WebKit */
+         -1px -1px 0 $color,  
+          1px -1px 0 $color,
+         -1px  1px 0 $color,
+          1px  1px 0 $color;      
+}
+
+@mixin mq($width: "portrait") {
+  @if ($width == "portrait") {
+    @media (max-width: 575.98px){
+      @content
+    }
+  } @else if ($width == "landscape") {
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      @content
+    }
+  } @else if ($width == "tablet") 
+  {
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      @content
+    }
+  } @else if ($width == "desktop") {   
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      @content
+    }
+  } @else if ($width == "large") {
+    @media (min-width: 1200px) {
+      @content
+    }
+  }
+}
