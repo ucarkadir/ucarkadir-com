@@ -10,46 +10,36 @@ body {
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
   position: relative; }
   #Showcase .swiper-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: transparent; }
-    #Showcase .swiper-container .swiper-content {
-      height: 100vh !important;
-      position: relative;
-      overflow: hidden;
-      background-color: #000; }
-      #Showcase .swiper-container .swiper-content .swiper-img {
-        min-width: 100%;
-        min-height: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0.8; }
-    #Showcase .swiper-container img {
-      height: 100vh;
-      width: 100vw; }
-  #Showcase .p-absolute {
+    width: 100%;
+    height: 100%; }
+    #Showcase .swiper-container .swiper-wrapper .swiper-slide .swiper-content img {
+      min-width: 100%;
+      min-height: 100%;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 1; }
+  #Showcase .container {
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
     z-index: 999; }
-  #Showcase .container .content {
-    font-size: 1.25rem;
-    font-weight: 300;
-    background-color: rgba(0, 0, 0, 0.2); }
-  #Showcase .container .content-header {
-    letter-spacing: 0.16rem;
-    color: #ffffff; }
-  #Showcase .container .content-links a {
-    color: #039cfd; }
-    #Showcase .container .content-links a:hover {
-      color: #0758b7; }
+    #Showcase .container .content {
+      font-size: 1.25rem;
+      font-weight: 300;
+      background-color: rgba(0, 0, 0, 0.2); }
+      #Showcase .container .content .content-header {
+        letter-spacing: 0.16rem;
+        color: #ffffff; }
+      #Showcase .container .content .content-links a {
+        color: #039cfd; }
+        #Showcase .container .content .content-links a:hover {
+          color: #0758b7; }
 
 @media (max-width: 575.98px) {
   .content-header {

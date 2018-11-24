@@ -11,66 +11,59 @@ body {
     position: relative;
 
     & .swiper-container {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        background: transparent;
+        width: 100%;
+        height: 100%;
 
-        & .swiper-content{
-            height: 100vh !important;
-            position: relative;
-            overflow: hidden;
-            background-color: #000;
+        & .swiper-wrapper {
 
-            & .swiper-img{
-                min-width: 100%;
-                min-height: 100%;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                opacity: 0.8;
+            & .swiper-slide{
+                & .swiper-content{
+                    img{
+                        min-width: 100%;
+                        min-height: 100%;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        opacity: 1;
+                    }
+                }
             }
-        }
 
-        & img {
-            height: 100vh;
-            width: 100vw;
         }
     }
 
-    & .p-absolute {
+    & .container {
         position: absolute;
         top: 0;
         right: 0;
         left: 0;
         bottom: 0;
         z-index: 999;
-    }
 
-    & .container {
         & .content {
             font-size: 1.25rem;
             font-weight: 300;
             background-color: rgba(0, 0, 0, 0.2);
-       }
 
-        & .content-header {
-            letter-spacing: 0.16rem;
-            color: $color-white;          
-        }
+            & .content-header {
+                letter-spacing: 0.16rem;
+                color: $color-white;
+            }
 
-        & .content-links {
-            & a {
-                color: $color-soft-blue;
+            & .content-links {
+                & a {
+                    color: $color-soft-blue;
 
-                &:hover {
-                    color: $color-mid-blue;
+                    &:hover {
+                        color: $color-mid-blue;
+                    }
                 }
             }
         }
+
     }
 }
 
