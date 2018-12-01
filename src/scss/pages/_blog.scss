@@ -1,6 +1,6 @@
 // pages/blog
 
-#blog {
+#Blog {
     h1 {
         font-size: 50px;
         margin-top: 39px;
@@ -14,7 +14,7 @@
         font-size: 30px;
         margin-top: 50px;
         margin-bottom: 30px;
-        letter-spacing: -.8px;
+        letter-spacing: -0.8px;
         line-height: 1.2;
         font-weight: 700;
 
@@ -23,7 +23,7 @@
     h3 {
         font-size: 30px;
         margin-bottom: 30px;
-        letter-spacing: -.75px;
+        letter-spacing: -0.75px;
         line-height: 1.25;
         font-weight: 300;
 
@@ -34,5 +34,85 @@
         margin-bottom: 30px;
         line-height: 1.65;
     }
+
+
+    color: $color-black;
+
+    .blog-img {
+        background-image: url("/img/img-1.jpg");
+        background-color: $color-white;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        top: 0;
+        left: 0;
+
+        & .blog-cat {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.75));
+            color: $color-white;
+            padding: 65px 30px 15px 20px;
+            font-weight: 300;
+        }
+    }
+
+    .blog-content {}
+
+    .tags {
+        margin-bottom: 3rem;
+
+        h4{
+            margin: 1rem 0rem !important;
+        }
+
+        a{
+            background-color: $color-soft-blue;
+            color: $color-white;
+            display: inline;
+            border-radius: .25rem !important;
+            padding: .5rem 1rem !important;
+            margin-right: .5rem !important;
+        }
+
+        a:hover{
+            background-color: $color-mid-blue;
+            text-decoration: none;
+        }
+    }
+
 }
 
+.modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.modal-body {
+    position: relative;
+    padding: 0px;
+    min-height: 400px;
+    background: $color-white;
+}
+
+.close {
+    position: absolute;
+    right: -30px;
+    top: 0;
+    z-index: 999;
+    font-size: 2rem;
+    font-weight: normal;
+    color: $color-white;
+    opacity: 1;
+}
+
+#image {
+    min-height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
