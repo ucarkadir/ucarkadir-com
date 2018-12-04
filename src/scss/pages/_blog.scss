@@ -38,16 +38,34 @@
 
     color: $color-black;
 
-    .blog-img {
-        background-image: url("/img/img-1.jpg");
-        background-color: $color-white;
+    .blog-header-img {
         height: 500px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        width: 100%;
         position: relative;
-        top: 0;
-        left: 0;
+        overflow: hidden;
+
+        @include mq("portrait") {
+            height: 250px !important;
+        }
+
+        img {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            @include mq("portrait") {
+
+                position: relative;
+                top: 0;
+                left: 0;
+                transform: translate(0, 0);
+            }
+        }
 
         & .blog-cat {
             position: absolute;
@@ -59,20 +77,17 @@
             padding: 65px 30px 15px 20px;
             font-weight: 300;
         }
-    }
 
-    // .blog-content {
-        
-    // }
+    }
 
     .tags {
         margin-bottom: 3rem;
 
-        h4{
+        h4 {
             margin: 1rem 0rem !important;
         }
 
-        a{
+        a {
             background-color: $color-soft-blue;
             color: $color-white;
             display: inline;
@@ -81,7 +96,7 @@
             margin-right: .5rem !important;
         }
 
-        a:hover{
+        a:hover {
             background-color: $color-mid-blue;
             text-decoration: none;
         }

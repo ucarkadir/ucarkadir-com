@@ -4,6 +4,14 @@ body {
   color: #ffffff;
   text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5); }
 
+.header {
+  min-height: 4rem;
+  background-color: #039cfd;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1); }
+  .header a {
+    color: #ffffff;
+    letter-spacing: 0.0625em; }
+
 #Showcase {
   height: calc(100vh - 4rem);
   background-color: #01194f;
@@ -36,22 +44,13 @@ body {
       #Showcase .container .content .content-header {
         letter-spacing: 0.16rem;
         color: #ffffff; }
+        @media (max-width: 575.98px) {
+          #Showcase .container .content .content-header {
+            font-size: 2.5rem; } }
       #Showcase .container .content .content-links a {
         color: #039cfd; }
         #Showcase .container .content .content-links a:hover {
           color: #0758b7; }
-
-@media (max-width: 575.98px) {
-  .content-header {
-    color: yellow !important; } }
-
-.header {
-  min-height: 4rem;
-  background-color: #039cfd;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1); }
-  .header a {
-    color: #ffffff;
-    letter-spacing: 0.0625em; }
 
 #Blog {
   color: #0e171c; }
@@ -79,17 +78,30 @@ body {
     font-size: 20px;
     margin-bottom: 30px;
     line-height: 1.65; }
-  #Blog .blog-img {
-    background-image: url("/img/img-1.jpg");
-    background-color: #ffffff;
+  #Blog .blog-header-img {
     height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
     position: relative;
-    top: 0;
-    left: 0; }
-    #Blog .blog-img .blog-cat {
+    overflow: hidden; }
+    @media (max-width: 575.98px) {
+      #Blog .blog-header-img {
+        height: 250px !important; } }
+    #Blog .blog-header-img img {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      @media (max-width: 575.98px) {
+        #Blog .blog-header-img img {
+          position: relative;
+          top: 0;
+          left: 0;
+          transform: translate(0, 0); } }
+    #Blog .blog-header-img .blog-cat {
       position: absolute;
       bottom: 0;
       left: 0;

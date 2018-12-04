@@ -35,9 +35,12 @@
 
   <section id="Blog">
     <div class="container">
+
+      <!-- blog image -->
       <div class="row">
         <div class="col-12">
-          <div class="blog-img rounded mt-5 mb-3">
+          <div class="blog-header-img mt-4 rounded">
+            <img src="img/img-2.jpg" alt="" />
             <span class="blog-cat rounded">
               Lastest / 12-12-2018
             </span>
@@ -45,9 +48,10 @@
         </div>
       </div>
 
+
       <!-- Blog Content -->
       <div class="row justify-content-center">
-        <div class="col-8">
+        <div class="col-10 col-md-9 col-xl-8">
           <div class="blog-content">
             <h1>Design of Waves</h1>
             <h3>She had a last view back on the skyline of her hometown Bookmarksgrove.</h3>
@@ -79,7 +83,7 @@
 
       <!-- Tags -->
       <div class="row justify-content-center">
-        <div class="col-8">
+        <div class="col-10 col-md-9 col-xl-8">
           <div class="tags">
             <hr>
             <h4> Tags </h4>
@@ -137,7 +141,7 @@
   <script>
     $(document).ready(function () {
       var $imageSrc;
-      $('html body section#Blog div.container div.row.justify-content-center div.col-8 div.blog-content img').click(
+      $('html body section#Blog div.container div.row.justify-content-center div.col-10.col-md-9.col-xl-8 div.blog-content img.img-fluid.rounded.mt-3.mb-5').click(
         function () {
           $imageSrc = $(this).data('bigimage');
         });
