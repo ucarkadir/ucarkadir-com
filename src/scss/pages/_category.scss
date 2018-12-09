@@ -14,6 +14,10 @@
             color: $color-soft-blue;
             text-decoration: none;
         }
+
+        button.navbar-toggler{
+            columns: $color-white;
+        }
     }
 
     & .content {
@@ -58,3 +62,8 @@
         }
     }
 }
+
+
+/*
+html body section#Category div.container div.row div.col div.category.mt-5.rounded nav.navbar.navbar-expand-lg button.navbar-toggler
+*/

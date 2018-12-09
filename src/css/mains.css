@@ -178,6 +178,8 @@ body {
     #Category .category a:hover {
       color: #039cfd;
       text-decoration: none; }
+    #Category .category button.navbar-toggler {
+      columns: #ffffff; }
   #Category .content .content-header {
     border: 1px solid black; }
   #Category .content .img-container {
@@ -202,3 +204,7 @@ body {
     overflow: hidden; }
   #Category .content a:hover {
     color: #039cfd; }
+
+/*
+html body section#Category div.container div.row div.col div.category.mt-5.rounded nav.navbar.navbar-expand-lg button.navbar-toggler
+*/
