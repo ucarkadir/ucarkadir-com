@@ -4,8 +4,7 @@
 
     & .category {
         background-color: $color-mid-blue;
-
-
+        
         & a {
             color: $color-white;
         }
@@ -28,7 +27,7 @@
         }
 
         & .img-container {
-            height: 30vh !important;
+            height: 30vh !important;            
             width: 100%;
             position: relative;
             overflow: hidden;

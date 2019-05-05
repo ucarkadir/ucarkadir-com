@@ -19,8 +19,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
     crossorigin="anonymous">
 
-
-
   <!-- Swipper -->
 </head>
 
@@ -39,15 +37,13 @@
       <div class="row">
         <div class="col">
           <div class="category mt-5 rounded">
-
-              <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                  <a class="navbar-brand d-lg-none " href="./category.html">Category</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="./blog.htmlnavbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded">
+              <a class="navbar-brand d-lg-none " href="./category.html">Category</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
                     <a class="nav-link" href="./blog.html">Lastets <span class="sr-only">(current)</span></a>
@@ -59,9 +55,14 @@
                     <a class="nav-link" href="./blog.html">Tech</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./blog.html">...</a>
-                  </li>
+                      <a class="nav-link" href="./blog.html">...</a>
+                    </li>                 
                 </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn bg-primary  my-2 my-sm-0" type="submit">Search</button>
+                </form>
               </div>
             </nav>
           </div>
@@ -69,158 +70,62 @@
       </div>
 
       <div class="content mt-5 mb-5">
+
         <!-- lastest -->
         <div class="row">
           <div class="col">
-            <h2 class="pt-3 pb-3">Lastets</h2>
-
+            <h2 class="pt-3 pb-3">Lastets new</h2>
             <!-- Content -->
 
             <div class="swiper-container">
-              <div class="swiper-wrapper">
-
+              <div class="swiper-wrapper" style="margin-bottom: 100px;">
                 <div class="swiper-slide">
-                  <div class="row">
-
-                    <div class="col-xs-12 col-md-6 col-xl-4">
-                      <div class="img-container rounded">
-                        <img src="img/img-1.jpg" class="img-fluid" />
-                      </div>
-
-                      <a href="./blog.html" class="d-inline-block mt-3 mb-2">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A velit, magnam quas esse quidem
-                        laboriosam. Necessitatibus, odit sapiente fugiat iste corrupti alias eveniet, velit
-                        laboriosam
-                        aperiam accusantium nam est corporis!
-                      </a>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-xl-4">
-                      <div class="img-container rounded">
-                        <img src="img/img-2.jpg" class="img-fluid" />
-                      </div>
-
-                      <a href="./blog.html" class="d-inline-block mt-3 mb-2">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A velit, magnam quas esse quidem
-                        laboriosam. Necessitatibus, odit sapiente fugiat iste corrupti alias eveniet, velit
-                        laboriosam
-                        aperiam accusantium nam est corporis!
-                      </a>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-xl-4">
-                      <div class="img-container rounded">
-                        <img src="img/img-3.jpg" class="img-fluid" />
-                      </div>
-
-                      <a href="./blog.html" class="d-inline-block mt-3 mb-2">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A velit, magnam quas esse quidem
-                        laboriosam. Necessitatibus, odit sapiente fugiat iste corrupti alias eveniet, velit
-                        laboriosam
-                        aperiam accusantium nam est corporis!
-                      </a>
-                    </div>
-
-                  </div>
-
+                  <div class=" img-container rounded">
+                    <img src="img/img-1.jpg" class="img-fluid" /> </div>
+                  <a href="./blog.html" class="mt-3 mb-2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. A
+                    velit, magnam quas esse quidem laboriosam. Necessitatibus, odit sapiente fugiat iste corrupti alias
+                    eveniet, velit laboriosam aperiam accusantium nam est corporis! </a>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="row">
-
-                    <div class="col-xs-12 col-md-6 col-xl-4">
-                      <div class="img-container rounded">
-                        <img src="img/img-4.jpg" class="img-fluid" />
-                      </div>
-
-                      <a href="./blog.html" class="d-inline-block mt-3 mb-2">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A velit, magnam quas esse quidem
-                        laboriosam. Necessitatibus, odit sapiente fugiat iste corrupti alias eveniet, velit
-                        laboriosam
-                        aperiam accusantium nam est corporis!
-                      </a>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-xl-4">
-                      <div class="img-container rounded">
-                        <img src="img/img-5.jpg" class="img-fluid" />
-                      </div>
-
-                      <a href="./blog.html" class="d-inline-block mt-3 mb-2">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A velit, magnam quas esse quidem
-                        laboriosam. Necessitatibus, odit sapiente fugiat iste corrupti alias eveniet, velit
-                        laboriosam
-                        aperiam accusantium nam est corporis!
-                      </a>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-xl-4">
-                      <div class="img-container rounded">
-                        <img src="img/img-6.jpg" class="img-fluid" />
-                      </div>
-
-                      <a href="./blog.html" class="d-inline-block mt-3 mb-2">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A velit, magnam quas esse quidem
-                        laboriosam. Necessitatibus, odit sapiente fugiat iste corrupti alias eveniet, velit
-                        laboriosam
-                        aperiam accusantium nam est corporis!
-                      </a>
-                    </div>
-
-                  </div>
-
+                  <div class=" img-container rounded">
+                    <img src="img/img-2.jpg" class="img-fluid" /> </div>
+                  <a href="./blog.html" class="mt-3 mb-2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. A
+                    velit, magnam quas esse quidem laboriosam. Necessitatibus, odit sapiente fugiat iste corrupti alias
+                    eveniet, velit laboriosam aperiam accusantium nam est corporis! </a>
                 </div>
+
+                <div class="swiper-slide">
+                  <div class="img-container rounded">
+                    <img src="img/img-3.jpg" class="img-fluid" /> </div>
+                  <a href="./blog.html" class="mt-3 mb-2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. A
+                    velit, magnam quas esse quidem laboriosam. Necessitatibus, odit sapiente fugiat iste corrupti alias
+                    eveniet, velit laboriosam aperiam accusantium nam est corporis! </a>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class=" img-container rounded">
+                    <img src="img/img-4.jpg" class="img-fluid" /> </div>
+                  <a href="./blog.html" class="mt-3 mb-2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. A
+                    velit, magnam quas esse quidem laboriosam. Necessitatibus, odit sapiente fugiat iste corrupti alias
+                    eveniet, velit laboriosam aperiam accusantium nam est corporis! </a>
+                </div>
+
 
               </div>
+              
               <div class="swiper-pagination"></div>
             </div>
-
-
-
           </div>
         </div>
 
-        <!-- LifeStyle -->
-        <div class="row">
-          <div class="col">
-            <h2 class="pt-3 pb-3">LifeStyle</h2>
-            <!-- Content -->
-            <div class="row">
-              <div class="col-xs-12 col-md-6 col-xl-4">
-                <div class="img-container rounded">
-                  <img src="img/img-4.jpg" class="img-fluid" />
-                </div>
-
-                <a href="./blog.html" class="d-inline-block mt-3 mb-2">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet ipsa placeat in vel rem quas
-                  ipsam.
-                  Veniam impedit eveniet perferendis, praesentium corrupti soluta natus est non illo
-                  exercitationem
-                  harum itaque!
-                </a>
-              </div>
-
-              <div class="col-xs-12 col-md-6 col-xl-4">
-                <div class="img-container rounded">
-                  <img src="img/img-5.jpg" class="img-fluid" />
-                </div>
-
-                <a href="./blog.html" class="d-inline-block mt-3 mb-2">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet ipsa placeat in vel rem quas
-                  ipsam.
-                </a>
-              </div>
-
-              <div class="col-xs-12 col-md-6 col-xl-4">
-                <div class="img-container rounded">
-                  <img src="img/img-6.jpg" class="img-fluid" />
-                </div>
-
-                <a href="./blog.html" class="d-inline-block mt-3 mb-2">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. A velit, magnam quas esse quidem
-                  laboriosam. Necessitatibus, odit sapiente fugiat iste corrupti alias eveniet, velit laboriosam
-                  aperiam accusantium nam est corporis!
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Optional JavaScript -->
@@ -235,9 +140,31 @@
 
   <script>
     var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      // init: false,
       pagination: {
         el: '.swiper-pagination',
+        clickable: true,
       },
+      breakpoints: {
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        }
+      }
     });
   </script>
 </body>
