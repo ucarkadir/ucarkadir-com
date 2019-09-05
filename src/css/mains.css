@@ -110,6 +110,46 @@ body {
       color: #ffffff;
       padding: 65px 30px 15px 20px;
       font-weight: 300; }
+  #Blog .blog-content .posts a {
+    color: #0e171c;
+    text-decoration: none; }
+    #Blog .blog-content .posts a .item {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      padding: 10px 5px; }
+    #Blog .blog-content .posts a .item::after {
+      display: block;
+      content: '';
+      width: 7px;
+      height: 7px;
+      border: 1px solid #dadada 1px solid;
+      position: relative;
+      top: 14px;
+      left: 50%;
+      margin-left: -5px;
+      background: #d3d3d3;
+      border-radius: 100%;
+      -webkit-box-shadow: #f8f8f8 0 0 0 5px;
+      box-shadow: #f8f8f8 0 0 0 5px; }
+    #Blog .blog-content .posts a h2 {
+      font-size: 50px;
+      margin-top: 39px;
+      margin-bottom: 15px;
+      letter-spacing: -1.4px;
+      line-height: 1.2;
+      font-weight: 700; }
+    #Blog .blog-content .posts a .post-meta {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 30px;
+      letter-spacing: -0.75px;
+      line-height: 1.25;
+      font-weight: 300; }
+    #Blog .blog-content .posts a p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      line-height: 1.65; }
+  #Blog .blog-content .posts a:hover {
+    color: #0758b7; }
   #Blog .tags {
     margin-bottom: 3rem; }
     #Blog .tags h4 {

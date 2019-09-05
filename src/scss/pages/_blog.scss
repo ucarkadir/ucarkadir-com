@@ -32,7 +32,7 @@
         font-size: 20px;
         margin-bottom: 30px;
         line-height: 1.65;
-    }
+    }   
 
 
     color: $color-black;
@@ -78,6 +78,68 @@
         }
 
     }
+
+    .blog-content {          
+
+        .posts{
+            a{
+                color: $color-black;
+                text-decoration: none;
+
+                .item{
+                    border-bottom: 1px solid rgba(0,0,0,0.15);
+                    //color: $color-soft-blue;
+                    padding: 10px 5px;
+                }
+
+                .item::after{
+                    display: block;
+                    content: '';
+                    width: 7px;
+                    height: 7px;
+                    border: 1px solid #dadada 1px solid;
+                    position: relative;
+                    top: 14px;
+                    left: 50%;
+                    margin-left: -5px;
+                    background: #d3d3d3;
+                    border-radius: 100%;
+                    -webkit-box-shadow: #f8f8f8 0 0 0 5px;
+                    box-shadow: #f8f8f8 0 0 0 5px;
+                }
+
+
+                h2{
+                    font-size: 50px;
+                    margin-top: 39px;
+                    margin-bottom: 15px;
+                    letter-spacing: -1.4px;
+                    line-height: 1.2;
+                    font-weight: 700;
+                }
+
+                .post-meta{
+                    display: block;
+                    font-size: 1rem;
+                    margin-bottom: 30px;
+                    letter-spacing: -0.75px;
+                    line-height: 1.25;
+                    font-weight: 300;
+                }
+
+                p{
+                    font-size: 20px;
+                    margin-bottom: 30px;
+                    line-height: 1.65;
+                }
+            }
+
+            a:hover{
+                color: $color-mid-blue;
+            }
+        }       
+    }
+    // #Blog > div > div:nth-child(2) > div > div > section > a:nth-child(1)
 
     .tags {
         margin-bottom: 3rem;
